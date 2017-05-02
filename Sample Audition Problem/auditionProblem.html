@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+            Sample Audition Problem
+    </title>
+    <style>
+            .container {
+                color:blue; 
+                font-family:cursive,sans-serif;
+            }
+
+            #form div {
+                padding: 5px;
+            }
+
+            .left {
+                text-align: right;
+            }
+
+            .right {
+                text-align: left;
+            }
+
+            .text-result {
+                color:green;
+            }
+
+        </style>   
+    <script type="text/JavaScript" src="auditionProblem.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Sample</h1>
+    <form name="numberFun" onsubmit="return showEvenNumbers();" class="form-inline">
+        <div id="form">
+                    <div class="row">
+                        <div class="col-xs-2 left">
+                            <label for="num1">Starting Number</label>
+                        </div>
+                        <div class="col-xs-10 right">   
+                            <div class="form-group">                             
+                                <input type="number" class="form-control" id="num1">
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="row">
+                        <div class="col-xs-2 left">
+                            <label for="num2">Ending Number</label>
+                        </div>
+                        <div class="col-xs-10 right">   
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="num2">
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 left">
+                            <label for="num3">Step</label>
+                        </div>
+                        <div class="col-xs-10 right">                                 
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="num3">
+                            </div>
+                        </div>     
+                    </div>                    
+                    <div class="row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-10 right">      
+                            <button type="submit" id="submitButton" class="btn btn-default">Display Events</button>
+                        </div>
+                    </div>
+        </div> 
+        <div class="text-result">
+            <span id="resultText"></span>
+        </div>
+    </form>
+
+    </div>
+</body>
+</html>
